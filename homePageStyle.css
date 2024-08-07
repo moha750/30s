@@ -5,32 +5,32 @@
 
 @font-face {
     font-family: LyonBlack;
-    src: url(./fonts/COMM\ -\ Lyon\ Arabic\ Slanted\ Display\ Black.otf);
+    src: url(../fonts/COMM\ -\ Lyon\ Arabic\ Slanted\ Display\ Black.otf);
   }
 
   @font-face {
     font-family: LyonBold;
-    src: url(./fonts/COMM\ -\ Lyon\ Arabic\ Slanted\ Display\ Bold.otf);
+    src: url(../fonts/COMM\ -\ Lyon\ Arabic\ Slanted\ Display\ Bold.otf);
   }
 
   @font-face {
     font-family: LyonLight;
-    src: url(./fonts/COMM\ -\ Lyon\ Arabic\ Slanted\ Display\ Light.otf);
+    src: url(../fonts/COMM\ -\ Lyon\ Arabic\ Slanted\ Display\ Light.otf);
   }
 
   @font-face {
     font-family: LyonMedium;
-    src: url(./fonts/COMM\ -\ Lyon\ Arabic\ Slanted\ Display\ Medium.otf);
+    src: url(../fonts/COMM\ -\ Lyon\ Arabic\ Slanted\ Display\ Medium.otf);
   }
 
   @font-face {
     font-family: LyonRegular;
-    src: url(./fonts/COMM\ -\ Lyon\ Arabic\ Slanted\ Display\ Regular.otf);
+    src: url(../fonts/COMM\ -\ Lyon\ Arabic\ Slanted\ Display\ Regular.otf);
   }
 
   @font-face {
     font-family: numberFont;
-    src: url(./fonts/MAGNETOB.TTF);
+    src: url(../fonts/MAGNETOB.TTF);
   }
 
 header {
