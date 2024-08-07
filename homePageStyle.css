@@ -192,15 +192,15 @@ header > img {
 
   .whoAm > h1 {
     font-family: LyonBlack;
-    text-align: right;
-    font-size: 5.5vw;
+    text-align: center;
+    font-size: 5vw;
     color: #DAC0A3;
   }
   
   .whoAm > h3 {
     font-family: LyonLight;
-    text-align: right;
-    font-size: 5vw;
+    text-align: center;
+    font-size: 4vw;
     padding: 3vw 0vw;
     color: #DAC0A3;
   }
