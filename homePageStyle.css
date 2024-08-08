@@ -34,16 +34,27 @@
   }
 
 header {
-    background-color: #DAC0A3;
-    text-align: center;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.5s;
+    justify-content: center;
+    /* background-color: #DAC0A3; */
     padding: 1vw 0vw;
+    z-index: 100;
+}
+
+header.sticky {
+    background-color: hsla(34, 42%, 74%, 0.5);
 }
 
 header > img {
     width: 15vw;
 }
 
-.header {
+/* .header {
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: 1fr;
@@ -63,115 +74,13 @@ header > img {
 
 .ExamLogo > img {
     width: 40vw;
-}
+} */
 
-.lessons {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-auto-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: column;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
-    gap: 4vw 0vw;
-    padding: 0vw 2vw;
-    background-color: #DAC0A3;
-    text-align: center;
-    grid-template-areas:
-      "lesson3 lesson2 lesson1"
-      "lesson6 lesson5 lesson4"
-      "lesson9 lesson8 lesson7"
-      "lesson12 lesson11 lesson10"
-      "lesson15 lesson14 lesson13"
-      "lesson18 lesson17 lesson16"
-      "lesson21 lesson20 lesson19"
-      "lesson24 lesson23 lesson22"
-      "lesson27 lesson26 lesson25"
-      "lesson30 lesson29 lesson28";
-  }
-  
-  .lesson1 { grid-area: lesson1; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 28vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
-  
-  .lesson2 { grid-area: lesson2; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 28vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
-  
-  .lesson3 { grid-area: lesson3; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 28vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
-  
-  .lesson5 { grid-area: lesson5; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 28vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
-  
-  .lesson4 { grid-area: lesson4; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 28vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
-  
-  .lesson6 { grid-area: lesson6; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 28vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
-  
-  .lesson7 { grid-area: lesson7; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 28vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
-  
-  .lesson8 { grid-area: lesson8; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 28vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
-  
-  .lesson9 { grid-area: lesson9; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 28vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
-  
-  .lesson10 { grid-area: lesson10; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 28vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
-  
-  .lesson11 { grid-area: lesson11; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 28vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
-
-  .lesson12 { grid-area: lesson12; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 28vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
-  
-  .lesson13 { grid-area: lesson13; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 28vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
-  
-  .lesson14 { grid-area: lesson14; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 28vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
-  
-  .lesson15 { grid-area: lesson15; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 28vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
-  
-  .lesson16 { grid-area: lesson16; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 28vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
-  
-  .lesson17 { grid-area: lesson17; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 28vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
-  
-  .lesson18 { grid-area: lesson18; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 28vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
-  
-  .lesson19 { grid-area: lesson19; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 28vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
-  
-  .lesson20 { grid-area: lesson20; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 28vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
-  
-  .lesson21 { grid-area: lesson21; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 28vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
-  
-  .lesson22 { grid-area: lesson22; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 28vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
-  
-  .lesson23 { grid-area: lesson23; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 28vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
-  
-  .lesson24 { grid-area: lesson24; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 28vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
-  
-  .lesson25 { grid-area: lesson25; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 28vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
-  
-  .lesson26 { grid-area: lesson26; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 28vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
-  
-  .lesson27 { grid-area: lesson27; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 28vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
-  
-  .lesson28 { grid-area: lesson28; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 28vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
-  
-  .lesson29 { grid-area: lesson29; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 28vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
-  
-  .lesson30 { grid-area: lesson30; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 28vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
-
-  #lessonBox:hover {
-    width: 30vw;
-    height: 30vw;
-  }
-
-  .lesson {
-    font-family: LyonBlack;
-    color: #D9C1A2;
-    font-size: 8vw;
-  }
-
-  .numbers {
-    font-family: numberFont;
-  }
-  
-  .me {  display: grid;
+.me {  display: grid;
     grid-template-columns: 1.5fr 0.5fr;
     grid-template-rows: 1fr;
     gap: 0px 1vw;
-    padding: 0vw 5vw;
+    padding: 5vw 5vw 0vw;
     grid-auto-flow: row;
     justify-content: center;
     align-content: center;
@@ -193,21 +102,26 @@ header > img {
   .whoAm > h1 {
     font-family: LyonBlack;
     text-align: center;
-    font-size: 5vw;
+    font-size: 5.5vw;
     color: #DAC0A3;
   }
   
   .whoAm > h3 {
     font-family: LyonLight;
     text-align: center;
-    font-size: 4vw;
+    font-size: 5vw;
     padding: 3vw 0vw;
     color: #DAC0A3;
+  }
+
+  .thrteen {
+    font-family: numberFont;
   }
 
   .socialMedia {
     display: flex;
     justify-content: space-evenly;
+    padding: 0vw 4vw;
   }
 
   a {
@@ -237,7 +151,7 @@ header > img {
   
   i {
     color: #F8F0E4;
-    font-size: 4vw;
+    font-size: 3.5vw;
     transition: 0.7s;
   }
 
@@ -246,16 +160,157 @@ header > img {
     font-size: 4vw;
   }
 
-  footer {
-    background-color: #F8F0E4;
-    height: 25vw;
-    display: flex;
+.lessons {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: column;
     justify-content: center;
-    align-items: flex-end;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 4vw 0vw;
+    padding: 4vw 2vw;
+    background-color: #DAC0A3;
+    text-align: center;
+    grid-template-areas:
+      "lesson3 lesson2 lesson1"
+      "lesson6 lesson5 lesson4"
+      "lesson9 lesson8 lesson7"
+      "lesson12 lesson11 lesson10"
+      "lesson15 lesson14 lesson13"
+      "lesson18 lesson17 lesson16"
+      "lesson21 lesson20 lesson19"
+      "lesson24 lesson23 lesson22"
+      "lesson27 lesson26 lesson25"
+      "lesson30 lesson29 lesson28";
+  }
+  
+  .lesson1 { grid-area: lesson1; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 26vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
+  
+  .lesson2 { grid-area: lesson2; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 26vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
+  
+  .lesson3 { grid-area: lesson3; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 26vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
+  
+  .lesson5 { grid-area: lesson5; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 26vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
+  
+  .lesson4 { grid-area: lesson4; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 26vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
+  
+  .lesson6 { grid-area: lesson6; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 26vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
+  
+  .lesson7 { grid-area: lesson7; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 26vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
+  
+  .lesson8 { grid-area: lesson8; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 26vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
+  
+  .lesson9 { grid-area: lesson9; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 26vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
+  
+  .lesson10 { grid-area: lesson10; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 26vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
+  
+  .lesson11 { grid-area: lesson11; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 26vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
+
+  .lesson12 { grid-area: lesson12; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 26vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
+  
+  .lesson13 { grid-area: lesson13; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 26vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
+  
+  .lesson14 { grid-area: lesson14; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 26vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
+  
+  .lesson15 { grid-area: lesson15; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 26vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
+  
+  .lesson16 { grid-area: lesson16; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 26vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
+  
+  .lesson17 { grid-area: lesson17; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 26vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
+  
+  .lesson18 { grid-area: lesson18; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 26vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
+  
+  .lesson19 { grid-area: lesson19; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 26vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
+  
+  .lesson20 { grid-area: lesson20; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 26vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
+  
+  .lesson21 { grid-area: lesson21; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 26vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
+  
+  .lesson22 { grid-area: lesson22; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 26vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
+  
+  .lesson23 { grid-area: lesson23; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 26vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
+  
+  .lesson24 { grid-area: lesson24; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 26vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
+  
+  .lesson25 { grid-area: lesson25; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 26vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
+  
+  .lesson26 { grid-area: lesson26; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 26vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
+  
+  .lesson27 { grid-area: lesson27; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 26vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
+  
+  .lesson28 { grid-area: lesson28; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 26vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
+  
+  .lesson29 { grid-area: lesson29; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 26vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
+  
+  .lesson30 { grid-area: lesson30; display: flex; justify-content: center; align-items: center; background: linear-gradient(145deg, rgba(248,240,228,1) 0%, rgba(234,220,200,1) 100%); width: 28vw; height: 26vw; border-radius: 3vw; transition: 0.7s; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
+
+  #lessonBox:hover {
+    width: 29vw;
+    height: 27vw;
   }
 
-  .meow {
+  .lesson {
+    font-family: LyonBlack;
     color: #D9C1A2;
-    padding-bottom: 2vw;
-    font-family: LyonRegular;
+    font-size: 7vw;
+  }
+
+  .numbers {
+    font-family: numberFont;
+  }
+
+
+  form {
+    background-color: #F8F0E4;
+    padding-bottom: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vw 0vw;
+  }
+
+  form > h1 {
+    font-family: LyonBold;
+    color: #D9C1A2;
+  }
+
+  input {
+    background-color: #DAC0A3;
+    font-size: 5vw;
+    color: #F8F0E4;
+    width: 66%;
+    height: 6vw;
+    padding: 2vw;
+    font-family: LyonMedium;
+    border: solid #D9C1A2 0.5vw ;
+    border-radius: 1.5vw;
+    box-shadow: #D9C1A2 0px 2px 4px, #D9C1A2 0px 7px 13px -3px, #D9C1A2 0px -3px 0px inset;
+  }
+
+  textarea {
+    background-color: #DAC0A3;
+    font-size: 5vw;
+    color: #F8F0E4;
+    width: 66%;
+    height: 36vw;
+    padding: 2vw;
+    font-family: LyonMedium;
+    border: solid #D9C1A2 0.5vw ;
+    border-radius: 1.5vw;
+    box-shadow: #D9C1A2 0px 2px 4px, #D9C1A2 0px 7px 13px -3px, #D9C1A2 0px -3px 0px inset;
+  }
+
+  button {
+    width: 24%;
+    height: 8vw;
+    background-color: #DAC0A3;
+    border: solid #D9C1A2 0.5vw ;
+    border-radius: 1.5vw;
+    box-shadow: #DAC0A3 0px 2px 4px, #D9C1A2 0px 7px 13px -3px, #D9C1A2 0px -3px 0px inset;
+    font-family: LyonMedium;
+    color: #F8F0E4;
+    font-size: 5vw;
   }
