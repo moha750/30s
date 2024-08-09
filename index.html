@@ -94,7 +94,10 @@
         <button id="sweetAlert">send</button>
     </form>
 
-    <audio autoplay loop>
+    <div>
+        <img id="playButtom" src="./imgs/play.png"></img>
+    </div>
+    <audio id="backgroundMusic" loop>
         <source src="./imgs/background.mp3" type="audio/mp3">
     </audio>
 
@@ -131,6 +134,21 @@
             var header = document.querySelector("header");
             header.classList.toggle("sticky", window.scrollY > 0);
         })
+    </script>
+
+    <script>
+        var play = document.getElementById('playButtom');
+        var music = document.getElementById('backgroundMusic');
+
+        play.onclick = function() {
+            if(music.paused) {
+                music.play()
+                play.src = "./imgs/play.png";
+            }else {
+                music.pause()
+                play.src = "./imgs/mute.png";
+            }
+        }
     </script>
 
 
