@@ -102,14 +102,14 @@ header > img {
   .whoAm > h1 {
     font-family: LyonBlack;
     text-align: center;
-    font-size: 5.5vw;
+    font-size: 4vw;
     color: #DAC0A3;
   }
   
   .whoAm > h3 {
     font-family: LyonLight;
     text-align: center;
-    font-size: 5vw;
+    font-size: 3.6vw;
     padding: 3vw 0vw;
     color: #DAC0A3;
   }
@@ -278,6 +278,7 @@ header > img {
   }
 
   input {
+    text-align: right;
     background-color: #DAC0A3;
     font-size: 5vw;
     color: #F8F0E4;
@@ -291,6 +292,7 @@ header > img {
   }
 
   textarea {
+    text-align: right;
     background-color: #DAC0A3;
     font-size: 5vw;
     color: #F8F0E4;
