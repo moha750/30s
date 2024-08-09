@@ -316,3 +316,15 @@ header > img {
     color: #F8F0E4;
     font-size: 5vw;
   }
+
+  #playButtom {
+    position: fixed;
+    margin: 2.5vw;
+    bottom: 0;
+    left: 0;
+    padding: 2vw;
+    width: 8vw;
+    height: 8vw;
+    background-color: #eadcc8;
+    border-radius: 50%;
+  }
